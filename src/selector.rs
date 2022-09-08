@@ -106,8 +106,8 @@ impl parser::Visit for NonTSPseudoClass {
     type Impl = Simple;
 
     fn visit<V>(&self, _visitor: &mut V) -> bool
-    where
-        V: visitor::SelectorVisitor<Impl = Self::Impl>,
+        where
+            V: visitor::SelectorVisitor<Impl = Self::Impl>,
     {
         true
     }
@@ -115,8 +115,8 @@ impl parser::Visit for NonTSPseudoClass {
 
 impl cssparser::ToCss for NonTSPseudoClass {
     fn to_css<W>(&self, dest: &mut W) -> fmt::Result
-    where
-        W: fmt::Write,
+        where
+            W: fmt::Write,
     {
         dest.write_str("")
     }
@@ -132,8 +132,8 @@ impl parser::PseudoElement for PseudoElement {
 
 impl cssparser::ToCss for PseudoElement {
     fn to_css<W>(&self, dest: &mut W) -> fmt::Result
-    where
-        W: fmt::Write,
+        where
+            W: fmt::Write,
     {
         dest.write_str("")
     }
