@@ -1,7 +1,7 @@
 [package]
 name = "scraper"
 version = "0.12.1"
-edition = "2018"
+edition = "2021"
 
 description = "HTML parsing and querying with CSS selectors"
 keywords = ["html", "css", "selector", "scraping"]
@@ -18,7 +18,7 @@ readme = "README.md"
 [dependencies]
 cssparser = "0.27.2"
 ego-tree = "0.6"
-html5ever = "0.25.1"
+html5ever = "0.26"
 matches = "0.1.9"
 selectors = "0.22"
 smallvec = "1"
